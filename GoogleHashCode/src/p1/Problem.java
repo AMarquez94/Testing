@@ -26,4 +26,13 @@ public class Problem {
 		MAXTURNS = 0;
 		MAXPAYLOAD = 0;
 	}
+	
+	public String toString(){
+		for(int i = 0; i < ROWS; i++){
+			for(int j = 0; j < COLS; j++){
+				
+			}
+		}
+		return "";
+	}
 }

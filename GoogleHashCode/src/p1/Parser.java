@@ -80,6 +80,7 @@ public class Parser {
 			for(int j = 0; j < productTypesOrderNumber; j++){
 				temp.addItems(p.PRODUCT_TYPES.get(f.nextInt()), 1);
 			}
+			p.ORDERS.add(temp);
 		}
 
 		f.close();
