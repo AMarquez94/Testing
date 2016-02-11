@@ -30,5 +30,20 @@ public class Main {
 		}
 		
 		System.out.println((double)total/(double) num);
+		
+		System.out.println("===============");
+		System.out.println("===============");
+		
+		Order temp = p.ORDERS.get(500);
+		for(Product o : temp.PLAIN_ORDER){
+			System.out.println("Product " + o.toString() + " : " + o.WEIGHT);
+		}
+		
+		temp.sortProductsByLessWeight();
+		System.out.println("===============");
+		
+		for(Product o : temp.PLAIN_ORDER){
+			System.out.println("Product " + o.toString() + " : " + o.WEIGHT);
+		}
 	}
 }
