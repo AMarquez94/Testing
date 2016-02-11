@@ -7,11 +7,13 @@ public class Order {
 	public HashMap<Product, Integer> LIST;
 	public int x;
 	public int y;
+	public int TOTALWEIGHT;
 	
 	public Order(){
 		LIST = new HashMap<Product, Integer>();
 		x = 0;
 		y = 0;
+		TOTALWEIGHT = 0;
 	}
 	
 	public void addItems(Product p, int quantity){
@@ -22,5 +24,6 @@ public class Order {
 		} else{
 			LIST.put(p, quantity);
 		}
+		TOTALWEIGHT = TOTALWEIGHT + p.WEIGHT;
 	}
 }

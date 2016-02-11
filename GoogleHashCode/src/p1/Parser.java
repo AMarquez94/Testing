@@ -36,8 +36,9 @@ public class Parser {
 		for (int i = 0; i < productTypes; i++) {
 			Product temp = new Product();
 			temp.TYPE = i;
+			temp.WEIGHT = f.nextInt();
 			p.PRODUCT_TYPES.add(temp);
-			p.WEIGHTS.put(temp, f.nextInt());
+			p.WEIGHTS.put(temp, temp.WEIGHT);
 		}
 
 		f.nextLine();

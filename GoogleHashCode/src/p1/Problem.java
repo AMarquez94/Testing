@@ -1,6 +1,7 @@
 package p1;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class Problem {
@@ -34,5 +35,9 @@ public class Problem {
 			}
 		}
 		return "";
+	}
+	
+	public void sortOrdersByLessWeight(){
+		Collections.sort(ORDERS, new TotalWeightComparator());
 	}
 }
