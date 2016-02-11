@@ -87,7 +87,7 @@ public class Parser {
 		f.close();
 		
 		for(int i = 0; i < drones; i++){
-			Drone d = new Drone();
+			Drone d = new Drone(p.MAXPAYLOAD);
 			d.x = p.WAREHOUSES.get(0).x;
 			d.y = p.WAREHOUSES.get(0).y;
 			p.DRONES.add(d);
