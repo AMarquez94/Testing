@@ -60,6 +60,7 @@ public class Parser {
 					w.addItems(p.PRODUCT_TYPES.get(j), quantity);
 				}
 			}
+			p.WAREHOUSES.add(w);
 			f.nextLine();
 		}
 
